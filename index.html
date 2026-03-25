@@ -50,7 +50,7 @@
             font-weight: 800; 
             font-size: 1.8rem; 
             margin-bottom: 10px;
-            letter-spacing: 1px; /* Jarak huruf agar font baru makin keren */
+            letter-spacing: 1px;
         }
         
         p.subtitle { 
@@ -78,6 +78,8 @@
             border: 1px solid rgba(255,255,255,0.05);
             transition: 0.3s;
             text-align: left;
+            position: relative;
+            overflow: hidden;
         }
 
         .menu-item:hover {
@@ -101,6 +103,21 @@
         }
         
         .menu-info p { font-size: 0.8rem; color: #ccc; }
+
+        /* DESAIN TOMBOL KLIK DETAIL */
+        .btn-detail {
+            background: linear-gradient(45deg, #00e5ff, #008cff);
+            color: #0f1014;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            margin-top: 8px;
+            display: inline-block;
+            box-shadow: 0 2px 10px rgba(0, 229, 255, 0.3);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
 
         /* Animasi */
         .reveal {
@@ -134,6 +151,7 @@
                 <img src="gu.jpg" alt="Good Sensi" class="menu-icon">
                 <div class="menu-info">
                     <h3>Good Sensi</h3>
+                    <div class="btn-detail">Lihat Harga & Fitur ➔</div>
                 </div>
             </a>
 
@@ -141,6 +159,7 @@
                 <img src="x.jpg" alt="Sensix" class="menu-icon">
                 <div class="menu-info">
                     <h3>Sensi X</h3>
+                    <div class="btn-detail">Lihat Harga & Fitur ➔</div>
                 </div>
             </a>
 
@@ -148,6 +167,7 @@
                 <img src="s.jpg" alt="Star Sensi" class="menu-icon">
                 <div class="menu-info">
                     <h3>Star Sensi</h3>
+                    <div class="btn-detail">Lihat Harga & Fitur ➔</div>
                 </div>
             </a>
 
@@ -155,6 +175,7 @@
                 <img src="a.png" alt="Aura Panel" class="menu-icon">
                 <div class="menu-info">
                     <h3>Aura Panel Injector</h3>
+                    <div class="btn-detail">Lihat Harga & Fitur ➔</div>
                 </div>
             </a>
             
@@ -162,6 +183,7 @@
                 <img src="king.jpg" alt="KiNG SENSi" class="menu-icon">
                 <div class="menu-info">
                     <h3>KiNG SENSi</h3>
+                    <div class="btn-detail">Lihat Harga & Fitur ➔</div>
                 </div>
             </a>
 
@@ -169,6 +191,7 @@
                 <img src="aim.png" alt="Aim Tracker" class="menu-icon">
                 <div class="menu-info">
                     <h3>AiM TRACKER</h3>
+                    <div class="btn-detail">Lihat Harga & Fitur ➔</div>
                 </div>
             </a>
 
@@ -176,6 +199,7 @@
                 <img src="i.jpg" alt="ITACHI POV" class="menu-icon">
                 <div class="menu-info">
                     <h3>Itachi PoV</h3>
+                    <div class="btn-detail">Lihat Harga & Fitur ➔</div>
                 </div>
             </a>
             
@@ -202,7 +226,7 @@
         </div>
 
         <footer>
-            &copy; 2023 Supermax Developer.
+            &copy; 2026 Supermax Developer.
         </footer>
     </div>
 
