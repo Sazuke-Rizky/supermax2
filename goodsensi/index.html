@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BangkiyXSupermax - Star Sensi VIP</title>
+    <title>BangkiyXSupermax - GoodSensi VIP</title>
     
     <style>
         /* Menggunakan font.ttf yang kamu upload */
@@ -77,7 +77,7 @@
             text-align: justify;
         }
 
-        /* --- FEATURE ITEMS --- */
+        /* --- FITUR ITEMS --- */
         .feature-item {
             background: var(--card-bg);
             padding: 20px;
@@ -103,7 +103,7 @@
 
         .feature-desc { font-size: 0.9rem; color: #ccc; text-align: justify; }
 
-        /* --- PRICING/COMPARISON TABLE --- */
+        /* --- PRICING SECTION --- */
         .pricing-section {
             display: grid;
             grid-template-columns: 1fr;
@@ -116,7 +116,7 @@
             background: linear-gradient(145deg, #1e1f26, #14151a);
             border-radius: 20px;
             padding: 25px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
         }
 
@@ -127,13 +127,21 @@
 
         .version-name { font-size: 1.6rem; font-weight: 800; color: var(--accent-blue); }
         .version-name.free { color: var(--free-gray); }
+        
+        .old-price { 
+            color: var(--discount-red); 
+            text-decoration: line-through; 
+            font-size: 1rem; 
+            display: block;
+            margin-top: 10px;
+        }
 
-        .price-label { 
-            font-size: 1.8rem; 
+        .new-price { 
+            font-size: 2rem; 
             font-weight: 800; 
             color: #fff;
             display: block;
-            margin: 15px 0;
+            margin-bottom: 20px;
         }
 
         .feature-list {
@@ -145,7 +153,7 @@
             padding-left: 10px;
         }
 
-        .feature-list li { margin-bottom: 10px; display: flex; align-items: center; }
+        .feature-list li { margin-bottom: 8px; display: flex; align-items: center; }
 
         .feature-list li.yes::before {
             content: "✓";
@@ -185,10 +193,22 @@
             font-family: 'CustomFont', sans-serif;
         }
 
-        .btn-blue { background: linear-gradient(45deg, #0088cc, #00a2ed); }
-        .btn-free { background: transparent; color: #fff; border: 2px solid var(--accent-blue); }
+        .btn-blue {
+            background: linear-gradient(45deg, #0088cc, #00a2ed);
+        }
 
-        /* --- OWNER CARD --- */
+        .btn-free {
+            background: transparent;
+            color: #fff;
+            border: 2px solid var(--accent-blue);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        /* --- DEV CARD --- */
         .dev-card {
             background: linear-gradient(180deg, var(--card-bg) 0%, #16171d 100%);
             padding: 30px;
@@ -198,6 +218,8 @@
         }
 
         .dev-photo { width: 100px; margin-bottom: 15px; }
+        .dev-name { font-size: 1.4rem; font-weight: 800; }
+        .dev-role { font-size: 0.8rem; color: var(--accent-blue); letter-spacing: 2px; }
 
         footer { font-size: 0.75rem; color: #444; padding-bottom: 40px; }
     </style>
@@ -206,80 +228,175 @@
 
     <div class="container">
         
-        <img src="s.png" alt="App Icon" class="main-photo reveal active">
+        <img src="gs.png" alt="App Icon" class="main-photo reveal active">
         
         <div class="reveal">
-            <h2 class="desc-title">Apa itu Star Sensi? </h2>
+            <h2 class="desc-title">Apa itu Good Sensi?</h2>
             <p class="description">
-                Star Sensi merupakan utility tool eksternal yang dirancang khusus untuk mengkalibrasi resolusi layar dan mengoptimalkan responsivitas sentuhan (touch response) pada perangkat.<br><br>
+                Good Sensi merupakan utility tool eksternal yang dirancang khusus untuk mengkalibrasi resolusi layar dan mengoptimalkan responsivitas sentuhan (touch response) pada perangkat.<br><br>
                 Sistem ini bekerja dengan menyempurnakan densitas piksel untuk menciptakan antarmuka yang lebih presisi dan halus (ultra-smooth). Hal ini memungkinkan pengguna melakukan teknik drag shot dengan akurasi tinggi dan upaya minimal. Aplikasi ini beroperasi murni pada pengaturan sistem perangkat tanpa mengintervensi, menyuntikkan, atau memodifikasi integritas file internal game sedikitpun, sehingga aman digunakan sebagai alat penunjang performa.
             </p>
         </div>
 
-        <div class="feature-header reveal">
-            <span class="feature-title">Feature</span>
+        <div class="feature-item reveal">
+            <img src="s.jpg" class="feature-img">
+            <h3>1. Sensitivity Tools</h3>
+            <p class="feature-desc">Fitur kalibrasi sensitivitas tingkat tinggi yang memungkinkan pengguna mengatur DPI Custom dan Pointer Speed secara instan.</p>
         </div>
 
         <div class="feature-item reveal">
-            <img src="se.jpg" class="feature-img">
-            <img src="sensi.jpg" class="feature-img">
-            <h3>Sensi Menu</h3>
-            <p class="feature-desc">Fitur kalibrasi sensitivitas tingkat tinggi yang memungkinkan pengguna mengatur <i>DPI Custom</i> dan <i>Pointer Speed</i> secara instan. Dirancang untuk menyeimbangkan licinnya layar agar kontrol bidikan tetap stabil Agar Pengguna Bisa Mendapatkan Drag Yang Smooth</p>
+            <img src="f.jpg" class="feature-img">
+            <img src="m.jpg" class="feature-img">
+            <h3>2. FPS Gaming Tools</h3>
+            <p class="feature-desc">Modul optimasi performa yang fokus pada stabilisasi Frame Per Second (FPS) dan mengurangi drop frame drastis.</p>
         </div>
 
         <div class="feature-item reveal">
             <img src="b.jpg" class="feature-img">
-            <img src="b2.jpg" class="feature-img">
-            <h3>Bypass Menu</h3>
-            <p class="feature-desc">Bypass Sebagai Pengaman Yang memastikan Akun Pengguna Aman 100% Dari Deteksi Pihak Ke 3,Memastikan Pengguna di jalur yang Aman Sehingga Aman Dari Banned</p>
+            <img src="p.jpg" class="feature-img">
+            <img src="v.jpg" class="feature-img">
+            <h3>3. Bypass</h3>
+            <p class="feature-desc">Sistem keamanan protokol yang memastikan penggunaan tool tetap berada di jalur aman dari deteksi pihak ketiga.</p>
         </div>
 
         <div class="feature-item reveal">
-            <img src="menus.jpg" class="feature-img">
             <img src="c.jpg" class="feature-img">
-            <h3>Support Menu</h3>
-            <p class="feature-desc">Peningkatan Peforma Perangkat dan Memasuki Mode Game dimana Perangkat Memfukuskan Perofma Pada Game, Sehingga Mengurangi Lag,Frame Drop,Dan Patah Patah. Crosshair Sebagai Overlay alat bantu visual berupa titik tengah (crosshair) custom yang bisa dimodifikasi. Membantu akurasi bidikan saat menggunakan senjata tanpa scope (noscope) agar tetap tepat sasaran di titik tengah layar.</p>
+            <h3>4. Crosshair</h3>
+            <p class="feature-desc">Overlay alat bantu visual berupa titik tengah (crosshair) custom untuk akurasi noscope yang tepat sasaran.</p>
         </div>
-       
+        
+        <div class="feature-item reveal">
+            <img src="ff.jpg" class="feature-img">
+            <h3>5. Apps Menu</h3>
+            <p class="feature-desc">Pusat kendali sinkronisasi otomatis antara Panel Sensi dengan game favorit Anda dengan sekali tekan.</p>
+        </div>
 
         <div class="pricing-section reveal">
             <h2 style="color:var(--accent-blue); margin-bottom:10px;">VERSION LIST</h2>
             
             <div class="price-card">
                 <div class="version-name free">FREE VERSION</div>
-                <span class="price-label">GRATIS</span>
+                <span class="new-price" style="margin-top:25px;">GRATIS</span>
                 <ul class="feature-list">
-                    <li class="yes">Sensi 1</li>
-                    <li class="yes">Sensi 2</li>
-                    <li class="no">Super Sensi</li>
-                    <li class="yes">Bypass V1</li>
-                    <li class="no">Super Bypass VPN</li>
-                    <li class="no">Crosshair</li>
-                    <li class="yes">FixLag</li>
+                    <li class="yes">Sensitivity X Y</li>
+                    <li class="yes">Touch Responsif</li>
+                    <li class="yes">Visual Carity</li>
+                    <li class="no">Sensitivity PPI</li>
+                    <li class="no">Super Sensitivity</li>
+                    <li class="no">High Sensitivity</li>
+                    <li class="yes">Zero Delay Touch</li>
+                    <li class="no">VIP Page</li>
+                    <li class="yes">CPU Optimizer</li>
+                    <li class="yes">Hertz Optimizer</li>
+                    <li class="yes">Smoth Scaling</li>
+                    <li class="no">Clear All</li>
                     <li class="no">Boost FPS</li>
+                    <li class="yes">ROG Monitoring</li>
+                    <li class="no">GPU Booster</li>
+                    <li class="no">Down Scale Grafik</li>
+                    <li class="no">Ultra Boost</li>
+                    <li class="yes">Direct Login Free Fire</li>
                     <li class="no">Bebas Iklan/Ads</li>
+                    <li class="no">Crosshair</li>
+                    <li class="no">Crosshair Control Menu</li>
                     <li class="no">Permanent</li>
+                    
                 </ul>
             </div>
 
             <div class="price-card featured">
-                <div class="version-name">VIP VERSION</div>
-                <span class="price-label">Rp35.000</span>
+                <div class="version-name">STANDAR</div>
+                <span class="old-price">Rp35.000</span>
+                <span class="new-price">Rp25.000</span>
                 <ul class="feature-list">
-                    <li class="yes">Sensi 1</li>
-                    <li class="yes">Sensi 2</li>
-                    <li class="yes">Super Sensi</li>
-                    <li class="yes">Bypass V1</li>
-                    <li class="yes">Super Bypass VPN</li>
-                    <li class="yes">Crosshair</li>
-                    <li class="yes">FixLag</li>
-                    <li class="yes">Boost FPS</li>
-                    <li class="yes">Bebas Iklan/Ads</li>
+                    <li class="yes">Sensitivity X Y</li>
+                    <li class="yes">Touch Responsif</li>
+                    <li class="yes">Visual Carity</li>
+                    <li class="yes">Sensitivity PPI</li>
+                    <li class="no">Super Sensitivity</li>
+                    <li class="no">High Sensitivity</li>
+                    <li class="yes">Zero Delay Touch</li>
+                    <li class="no">VIP Page</li>
+                    <li class="yes">CPU Optimizer</li>
+                    <li class="yes">Hertz Optimizer</li>
+                    <li class="yes">Smoth Scaling</li>
+                    <li class="yes">Clear All</li>
+                    <li class="no">Boost FPS</li>
+                    <li class="yes">ROG Monitoring</li>
+                    <li class="no">GPU Booster</li>
+                    <li class="no">Down Scale Grafik</li>
+                    <li class="no">Ultra Boost</li>
+                    <li class="yes">Direct Login Free Fire</li>
+                    <li class="yes">Bebas Ads/Iklan</li>
+                    <li class="no">Crosshair</li>
+                    <li class="no">Crosshair Control Menu</li>
                     <li class="yes">Permanent</li>
                     <li class="yes">Free Update</li>
-                   
                 </ul>
             </div>
+
+            <div class="price-card featured">
+                <div class="version-name">PRO</div>
+                <span class="old-price">Rp80.000</span>
+                <span class="new-price">Rp60.000</span>
+                <ul class="feature-list">
+                    <li class="yes">Sensitivity X Y</li>
+                    <li class="yes">Touch Responsif</li>
+                    <li class="yes">Visual Carity</li>
+                    <li class="yes">Sensitivity PPI</li>
+                    <li class="yes">Super Sensitivity</li>
+                    <li class="no">High Sensitivity</li>
+                    <li class="yes">Zero Delay Touch</li>
+                    <li class="yes">VIP Page</li>
+                    <li class="yes">CPU Optimizer</li>
+                    <li class="yes">Hertz Optimizer</li>
+                    <li class="yes">Smoth Scaling</li>
+                    <li class="yes">Clear All</li>
+                    <li class="yes">Boost FPS</li>
+                    <li class="yes">ROG Monitoring</li>
+                    <li class="yes">GPU Booster</li>
+                    <li class="yes">Down Scale Grafik</li>
+                    <li class="no">Ultra Boost</li>
+                    <li class="yes">Direct Login Free Fire</li>
+                    <li class="yes">Bebas Iklan/Ads</li>
+                    <li class="yes">Crosshair</li>
+                    <li class="no">Crosshair Control Menu</li>
+                    <li class="yes">Permanent</li>
+                    <li class="yes">Free Update</li>
+                </ul>
+            </div>
+
+            <div class="price-card featured">
+                <div class="version-name">ULTRA</div>
+                <span class="old-price">Rp150.000</span>
+                <span class="new-price">Rp90.000</span>
+                <ul class="feature-list">
+                    <li class="yes">Sensitivity X Y</li>
+                    <li class="yes">Touch Responsif</li>
+                    <li class="yes">Visual Carity</li>
+                    <li class="yes">Sensitivity PPI</li>
+                    <li class="yes">Super Sensitivity</li>
+                    <li class="yes">High Sensitivity</li>
+                    <li class="yes">Zero Delay Touch</li>
+                    <li class="yes">VIP Page</li>
+                    <li class="yes">CPU Optimizer</li>
+                    <li class="yes">Hertz Optimizer</li>
+                    <li class="yes">Smoth Scaling</li>
+                    <li class="yes">Clear All</li>
+                    <li class="yes">Boost FPS</li>
+                    <li class="yes">ROG Monitoring</li>
+                    <li class="yes">GPU Booster</li>
+                    <li class="yes">Down Scale Grafik</li>
+                    <li class="yes">Ultra Boost</li>
+                    <li class="yes">Direct Login Free Fire</li>
+                    <li class="yes">Bebas Ads/Iklan</li>
+                    <li class="yes">Crosshair</li>
+                    <li class="yes">Crosshair Control Menu</li>
+                    <li class="yes">Permanent</li>
+                    <li class="yes">Free Update</li>
+                </ul>
+            </div>
+        </div>
 
         <div class="btn-group reveal">
             <a href="https://wa.me/6288983385195" class="btn btn-blue">
@@ -294,10 +411,10 @@
         </div>
 
         <div class="dev-card reveal">
-            <img src="gs.png" alt="Dev" class="dev-photo">
+            <img src="supermax.png" alt="Dev" class="dev-photo">
             <h3 class="dev-name">Supermax & Bangkiy</h3>
             <p class="dev-role">Owner & Developer</p>
-            <p class="dev-text">Pemilik dan pengembang Star Sensi</p>
+            <p class="dev-text">Pemilik dan pengembang Good Sensi</p>
             <p class="dev-text">YouTube - Bangkiy.7z</p>
         </div>
 
